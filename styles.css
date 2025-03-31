@@ -7,14 +7,11 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: url('images/background.jpg') center/cover no-repeat fixed;
   color: #222;
   line-height: 1.6;
 }
+
 .nav-buttons {
   text-align: center;
   margin-top: 30px;
