@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | FC Photo Houston</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .hero {
+      height: 60vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('**images/background.jpg**') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .portfolio-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 60px 40px;
+      background-color: #fff;
+    }
+
+    .portfolio-gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .section-title {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ddd;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>My Portfolio</h1>
+      <p>A glimpse into the moments that matter most.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Gallery -->
+  <h2 class="section-title">Featured Work</h2>
+  <section class="portfolio-gallery">
+    <img src="**images/photo1.jpg**" alt="Family Session">
+    <img src="**images/photo2.jpg**" alt="Maternity Portrait">
+    <img src="**images/photo3.jpg**" alt="Event Coverage">
+    <img src="**images/photo4.jpg**" alt="Cake Smash">
+    <img src="**images/photo5.jpg**" alt="Couples Shoot">
+    <img src="**images/photo6.jpg**" alt="Newborn Lifestyle">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FC Photo Houston</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="portfolio.html">Portfolio</a> |
+      <a href="#">Book</a> |
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+</body>
+</html>
