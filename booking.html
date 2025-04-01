@@ -63,7 +63,7 @@
   <h1>Book a Session with FC Photo Houston</h1>
 
   <!-- Booking Form -->
-  <form id="clientForm">
+  <form action="schedule.html" method="GET">
     <label for="name">Full Name</label>
     <input type="text" id="name" name="name" required />
 
@@ -78,28 +78,6 @@
 
     <button type="submit">Continue to Schedule</button>
   </form>
-
-  <!-- Calendly Script -->
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script>
-    document.getElementById("clientForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const phone = document.getElementById("phone").value;
-      const notes = document.getElementById("notes").value;
-
-      // Launch Calendly with prefilled form data
-      Calendly.initPopupWidget({
-        url: 'https://calendly.com/astephens-fcphoto' +
-             '?name=' + encodeURIComponent(name) +
-             '&email=' + encodeURIComponent(email) +
-             '&a1=' + encodeURIComponent(phone) +
-             '&a2=' + encodeURIComponent(notes)
-      });
-    });
-  </script>
 
 </body>
 </html>
