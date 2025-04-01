@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: url('background.png') center/cover no-repeat fixed;
+  background: url('images/background.png') center/cover no-repeat fixed;
   color: #222;
   line-height: 1.6;
 }
@@ -51,14 +51,10 @@ section {
 
 /* Hero Section */
 header {
-  background: url('logo.jpg') center/cover no-repeat;
-  height: 100vh;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  header {
+    text-align: center;
+    padding: 80px 20px;
+  }
 }
 
 header h1 {
