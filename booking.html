@@ -1,140 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Book a Session | FC Photo Houston</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    .booking-hero {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('**images/background.jpg**') center/cover no-repeat;
-      height: 50vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
-
-    .booking-hero h1 {
-      font-size: 3rem;
-    }
-
-    .booking-form-container {
-      max-width: 700px;
-      margin: 40px auto;
-      background-color: #fff;
+    body {
+      font-family: Arial, sans-serif;
       padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background-color: #f5f5f5;
     }
 
-    .booking-form-container h2 {
+    h1 {
       text-align: center;
       margin-bottom: 30px;
     }
 
-    form label {
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
       display: block;
-      margin-bottom: 10px;
+      margin-top: 15px;
       font-weight: bold;
     }
 
-    form input,
-    form select,
-    form textarea {
+    input, textarea {
       width: 100%;
       padding: 10px;
-      margin-bottom: 20px;
+      margin-top: 5px;
       border-radius: 6px;
       border: 1px solid #ccc;
+      font-size: 14px;
     }
 
-    form button {
+    button {
+      margin-top: 25px;
       background-color: #000;
       color: #fff;
       padding: 12px 20px;
       border: none;
       border-radius: 6px;
-      font-size: 1rem;
+      font-size: 16px;
       cursor: pointer;
+      width: 100%;
     }
 
-    form button:hover {
+    button:hover {
       background-color: #444;
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    footer a {
-      color: #ddd;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #fff;
     }
   </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="booking-hero">
-    <h1>Book a Session</h1>
-  </section>
-
-  <section class="nav-buttons">
-    <a href="index.html" class="btn">Home</a>
-    <a href="portfolio.html" class="btn">Portfolio</a>
-    <a href="booking.html" class="btn">Book a Session</a>
-    <a href="contact.html" class="btn">Contact Us</a>
-  </section>
+  <h1>Book a Session with FC Photo Houston</h1>
 
   <!-- Booking Form -->
-  <div class="booking-form-container">
-    <h2>Session Request Form</h2>
-    <form action="mailto:**your-email@example.com**" method="POST" enctype="text/plain">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
+  <form id="clientForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required />
 
-      <label for="session">Session Type</label>
-      <select id="session" name="session">
-        <option value="mini">Mini Session ($75)</option>
-        <option value="full">Full Session ($150)</option>
-        <option value="event">Event Photography (Custom Quote)</option>
-      </select>
+    <label for="notes">Details About the Shoot or Consultation</label>
+    <textarea id="notes" name="notes" rows="5" required></textarea>
 
-      <label for="date">Preferred Date</label>
-      <input type="date" id="date" name="date">
+    <button type="submit">Continue to Schedule</button>
+  </form>
 
-      <label for="message">Additional Notes</label>
-      <textarea id="message" name="message" rows="4"></textarea>
+  <!-- Calendly Script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <script>
+    document.getElementById("clientForm").addEventListener("submit", function(e) {
+      e.preventDefault();
 
-      <button type="submit">Submit Booking Request</button>
-    </form>
-  </div>
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const notes = document.getElementById("notes").value;
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 FC Photo Houston</p>
-    <p>
-      <a href="index.html">Home</a> |
-      <a href="portfolio.html">Portfolio</a> |
-      <a href="booking.html">Book</a> |
-      <a href="#">Contact</a>
-    </p>
-  </footer>
+      // Launch Calendly with prefilled form data
+      Calendly.initPopupWidget({
+        url: 'https://calendly.com/astephens-fcphoto' +
+             '?name=' + encodeURIComponent(name) +
+             '&email=' + encodeURIComponent(email) +
+             '&a1=' + encodeURIComponent(phone) +
+             '&a2=' + encodeURIComponent(notes)
+      });
+    });
+  </script>
+
 </body>
 </html>
