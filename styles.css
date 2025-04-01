@@ -118,18 +118,26 @@ section img {
 
 /* Footer */
 footer {
-  background: #222;
+  background-color: #000;
   color: #fff;
   padding: 30px 20px;
   text-align: center;
+  font-size: 14px;
 }
 
 footer a {
   color: #ddd;
-  margin: 0 10px;
-  font-size: 0.95rem;
+  text-decoration: none;
+  margin: 0 8px;
 }
 
 footer a:hover {
   color: #fff;
+}
+
+.social-icon {
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
