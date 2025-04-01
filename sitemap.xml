@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.fcphotohouston.com/</loc>
+  </url>
+  <url>
+    <loc>https://www.fcphotohouston.com/portfolio.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fcphotohouston.com/booking.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fcphotohouston.com/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://www.fcphotohouston.com/schedule.html</loc>
+  </url>
+
+  <!-- Add portfolio subpages -->
+  <url><loc>https://www.fcphotohouston.com/backtoschool.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/bestfriend.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/branding.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/cakesmash.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/engagement.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/eventcoverage.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/family.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/fresh48.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/fullportraits.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/graduation.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/headshots.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/maternity.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/mini.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/motherhood.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/newborn.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/petme.html</loc></url>
+  <url><loc>https://www.fcphotohouston.com/proposal.html</loc></url>
+
+</urlset>
