@@ -142,3 +142,49 @@ footer a:hover {
   margin-right: 6px;
   object-fit: contain;
 }
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .subnav {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+    padding: 10px;
+  }
+
+  .grid img {
+    height: auto;
+  }
+
+  .category h2 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+
+  footer a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .social-icon {
+    height: 20px;
+    width: 20px;
+  }
+}
