@@ -6,58 +6,67 @@
   <title>Portfolio | FC Photo Houston</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .hero {
-      height: 60vh;
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('**images/background.jpg**') center/cover no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
-    .portfolio-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      padding: 60px 40px;
-      background-color: #fff;
-    }
-
-    .portfolio-gallery img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .portfolio-gallery img:hover {
-      transform: scale(1.03);
-    }
-
-    .section-title {
-      text-align: center;
-      padding-top: 40px;
-      font-size: 2.2rem;
-      font-weight: bold;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
       color: #333;
     }
 
-    footer {
-      background: #222;
-      color: white;
-      padding: 30px 20px;
+    nav {
+      background-color: #000;
+      padding: 15px 0;
       text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .category {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .category h2 {
+      border-bottom: 2px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
     }
 
     footer a {
@@ -69,39 +78,175 @@
     footer a:hover {
       color: #fff;
     }
+
+    .social-icon {
+      height: 22px;
+      width: 22px;
+      vertical-align: middle;
+      margin-right: 6px;
+      object-fit: contain;
+    }
   </style>
 </head>
 <body>
-    
-  <!-- Hero Section -->
-  <section class="hero">
-    <div>
-      <h1>My Portfolio</h1>
-      <p>A glimpse into the moments that matter most.</p>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Portfolio</h1>
+
+  <!-- sub categories for portfolio-->
+  <div class="grid">
+    <a href="backtoschool.html">Back to School</a>
+    <a href="bestfriend.html">Best Friend / Sibling</a>
+    <a href="branding.html">Branding / Content Creation</a>
+    <a href="cakesmash.html">Cake Smash / First Birthday</a>
+    <a href="engagement.html">Engagement</a>
+    <a href="eventcoverage.html">Event Coverage</a>
+    <a href="family.html">Family Sessions</a>
+    <a href="fresh48.html">Fresh 48</a>
+    <a href="fullportraits.html">Full Portrait Sessions</a>
+    <a href="graduation.html">Graduation</a>
+    <a href="headshots.html">Headshots</a>
+    <a href="maternity.html">Maternity</a>
+    <a href="mini.html">Mini Sessions</a>
+    <a href="motherhood.html">Motherhood</a>
+    <a href="newborn.html">Newborn</a>
+    <a href="petme.html">Pet & Me</a>
+    <a href="proposal.html">Proposal</a>
+  </div>
+
+
+ <!-- Alphabetized Categories -->
+<div class="category">
+    <h2>Back to School</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Back to School">
     </div>
-  </section>
+  </div>
+  
+  <div class="category">
+    <h2>Best Friend / Sibling</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Best Friend">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Branding / Content Creation</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Branding">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Cake Smash / First Birthday</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Cake Smash">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Engagement</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Engagement">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Event Coverage</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Event">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Family Sessions</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Family">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Fresh 48</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Fresh 48">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Full Portrait Sessions</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Portrait">
+      <img src="images/placeholder.jpg" alt="Portrait">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Graduation</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Graduation">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Headshots</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Headshots">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Maternity</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Maternity">
+      <img src="images/placeholder.jpg" alt="Maternity">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Mini Sessions</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Mini Session">
+      <img src="images/placeholder.jpg" alt="Mini Session">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Motherhood</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Motherhood">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Newborn & Family</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Newborn">
+      <img src="images/placeholder.jpg" alt="Family">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Pet & Me</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Pet & Me">
+    </div>
+  </div>
+  
+  <div class="category">
+    <h2>Proposal</h2>
+    <div class="grid">
+      <img src="images/placeholder.jpg" alt="Proposal">
+    </div>
+  </div>
 
-  <section class="nav-buttons">
-    <a href="index.html" class="btn">Home</a>
-    <a href="portfolio.html" class="btn">Portfolio</a>
-    <a href="booking.html" class="btn">Book a Session</a>
-    <a href="contact.html" class="btn">Contact Us</a>
-  </section>
-
-  <!-- Portfolio Gallery -->
-  <h2 class="section-title">Featured Work</h2>
-  <section class="portfolio-gallery">
-    <img src="**images/photo1.jpg**" alt="Family Session">
-    <img src="**images/photo2.jpg**" alt="Maternity Portrait">
-    <img src="**images/photo3.jpg**" alt="Event Coverage">
-    <img src="**images/photo4.jpg**" alt="Cake Smash">
-    <img src="**images/photo5.jpg**" alt="Couples Shoot">
-    <img src="**images/photo6.jpg**" alt="Newborn Lifestyle">
-  </section>
-
- <!-- Footer -->
-<footer>
-  <div class="footer-content">
+  <!-- Footer -->
+  <footer>
     <p>&copy; 2025 FC Photo Houston</p>
     <p>
       <a href="index.html">Home</a> |
@@ -116,7 +261,6 @@
         @fcphotohouston
       </a>
     </p>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
