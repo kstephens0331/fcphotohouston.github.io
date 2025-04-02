@@ -105,37 +105,66 @@
 </script>
 <body>
   <!-- Navigation -->
-  <nav>
-    <a href="index.html"class="nav-button">Home</a>
-    <a href="portfolio.html"class="nav-button">Portfolio</a>
-    <a href="booking.html"class="nav-button">Booking</a>
-    <a href="contact.html"class="nav-button">Contact</a>
-    <a href="pricing.html"class="nav-button">Pricing</a>
-    <a href="testimonials.html"class="nav-button">Testimonials</a>
-    <a href="faq.html"class="nav-button">FAQ</a>
-  </nav>
+  <div class="nav-buttons">
+    <a href="index.html" class="btn">Home</a>
+    <a href="portfolio.html" class="btn">Portfolio</a>
+    <a href="booking.html" class="btn">Booking</a>
+    <a href="contact.html" class="btn">Contact</a>
+    <a href="pricing.html" class="btn">Pricing</a>
+    <a href="testimonials.html" class="btn">Testimonials</a>
+    <a href="faq.html" class="btn">FAQ</a>
+  </div>
+  
 
   <h1>Portfolio</h1>
 
   <!-- sub categories for portfolio-->
-  <div class="grid">
-    <a href="backtoschool.html">Back to School</a>
-    <a href="bestfriend.html">Best Friend / Sibling</a>
-    <a href="branding.html">Branding / Content Creation</a>
-    <a href="cakesmash.html">Cake Smash / First Birthday</a>
-    <a href="engagement.html">Engagement</a>
-    <a href="eventcoverage.html">Event Coverage</a>
-    <a href="family.html">Family Sessions</a>
-    <a href="fresh48.html">Fresh 48</a>
-    <a href="fullportraits.html">Full Portrait Sessions</a>
-    <a href="graduation.html">Graduation</a>
-    <a href="headshots.html">Headshots</a>
-    <a href="maternity.html">Maternity</a>
-    <a href="mini.html">Mini Sessions</a>
-    <a href="motherhood.html">Motherhood</a>
-    <a href="newborn.html">Newborn</a>
-    <a href="petme.html">Pet & Me</a>
-    <a href="proposal.html">Proposal</a>
+  <style>
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+  
+    .category-card {
+      background-color: #000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+  
+    .category-card:hover {
+      background-color: #333;
+      transform: translateY(-5px);
+    }
+  </style>
+  
+  <div class="category-grid">
+    <a href="backtoschool.html" class="category-card">Back to School</a>
+    <a href="bestfriend.html" class="category-card">Best Friend / Sibling</a>
+    <a href="branding.html" class="category-card">Branding / Content Creation</a>
+    <a href="cakesmash.html" class="category-card">Cake Smash / First Birthday</a>
+    <a href="engagement.html" class="category-card">Engagement</a>
+    <a href="eventcoverage.html" class="category-card">Event Coverage</a>
+    <a href="family.html" class="category-card">Family Sessions</a>
+    <a href="fresh48.html" class="category-card">Fresh 48</a>
+    <a href="fullportraits.html" class="category-card">Full Portrait Sessions</a>
+    <a href="graduation.html" class="category-card">Graduation</a>
+    <a href="headshots.html" class="category-card">Headshots</a>
+    <a href="maternity.html" class="category-card">Maternity</a>
+    <a href="mini.html" class="category-card">Mini Sessions</a>
+    <a href="motherhood.html" class="category-card">Motherhood</a>
+    <a href="newborn.html" class="category-card">Newborn</a>
+    <a href="petme.html" class="category-card">Pet & Me</a>
+    <a href="proposal.html" class="category-card">Proposal</a>
   </div>
 
 
