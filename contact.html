@@ -11,102 +11,6 @@
   <meta property="og:url" content="https://www.fcphotohouston.com/contact.html">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      margin: 0;
-    }
-
-    nav {
-      background-color: #000;
-      padding: 15px 0;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 40px 0 20px;
-    }
-
-    .form-container {
-      max-width: 600px;
-      background-color: white;
-      margin: auto;
-      padding: 40px 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    label {
-      display: block;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      font-size: 14px;
-    }
-
-    button {
-      margin-top: 30px;
-      background-color: #000;
-      color: white;
-      padding: 12px;
-      border: none;
-      width: 100%;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #333;
-    }
-
-    footer {
-      background-color: #000;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 60px;
-    }
-
-    footer a {
-      color: #ddd;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #fff;
-    }
-
-    .social-icon {
-      height: 22px;
-      width: 22px;
-      vertical-align: middle;
-      margin-right: 6px;
-      object-fit: contain;
-    }
-  </style>
 </head>
 <body>
 
@@ -121,7 +25,7 @@
     <a href="faq.html" class="btn">FAQ</a>
   </div>
 
-  <h1>Contact FC Photo Houston</h1>
+  <h1 class="page-title">Contact FC Photo Houston</h1>
 
   <!-- Contact Form -->
   <div class="form-container">
@@ -135,11 +39,10 @@
       <label for="message">Your Message</label>
       <textarea id="message" name="message" rows="6" required></textarea>
 
-      <button type="submit">Send Message</button>
+      <button type="submit" class="btn-submit">Send Message</button>
     </form>
   </div>
 
-  <!-- JavaScript for form handling -->
   <script>
     document.getElementById('contactForm').addEventListener('submit', async function(e) {
       e.preventDefault();

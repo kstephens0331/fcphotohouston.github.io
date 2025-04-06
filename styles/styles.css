@@ -224,10 +224,11 @@ footer a:hover {
 
 .nav-buttons a {
   color: white;
-  margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
 .nav-buttons a:hover {
