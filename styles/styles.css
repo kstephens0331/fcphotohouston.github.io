@@ -354,3 +354,19 @@ footer a:hover {
   margin-right: 6px;
   object-fit: contain;
 }
+
+.instagram-preview {
+  text-align: center;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.instagram-preview h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.instagram-embed {
+  max-width: 1000px;
+  margin: 0 auto;
+}
