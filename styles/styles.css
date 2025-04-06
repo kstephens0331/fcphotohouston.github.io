@@ -142,50 +142,72 @@ footer a:hover {
   object-fit: contain;
 }
 
+/* ===== MOBILE RESPONSIVE ADJUSTMENTS ===== */
 @media (max-width: 768px) {
-  nav {
-    padding: 10px 0;
-    font-size: 14px;
+  body {
+    font-size: 16px;
+    padding: 0 10px;
   }
 
-  nav a {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar a {
     display: block;
-    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
   }
 
-  .subnav {
-    padding: 8px 10px;
-    font-size: 13px;
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
   }
 
+  .nav-buttons .btn {
+    width: 90%;
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 90%;
+  }
+
+  .category-grid,
   .grid {
     grid-template-columns: 1fr !important;
-    padding: 10px;
-  }
-
-  .grid img {
-    height: auto;
-  }
-
-  .category h2 {
-    font-size: 20px;
-    margin-top: 20px;
   }
 
   footer {
-    font-size: 14px;
     padding: 20px 10px;
+    font-size: 14px;
   }
 
-  footer a {
-    display: block;
-    margin: 5px 0;
+  .footer-content p {
+    margin: 10px 0;
   }
 
-  .social-icon {
-    height: 20px;
-    width: 20px;
+  .lightbox-content {
+    width: 90% !important;
+    max-height: 80vh;
   }
+
+  .calendly-inline-widget {
+    height: 80vh;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 .lightbox {
   display: none;
@@ -283,4 +305,52 @@ footer a:hover {
 
 .btn-submit:hover {
   background-color: #333;
+}
+/* === HEADER NAVIGATION === */
+nav.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+nav.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+nav.navbar a:hover {
+  color: #ccc;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+footer a {
+  color: #ddd;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.social-icon {
+  height: 22px;
+  width: 22px;
+  vertical-align: middle;
+  margin-right: 6px;
+  object-fit: contain;
 }
