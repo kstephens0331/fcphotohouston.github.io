@@ -216,3 +216,66 @@ footer a:hover {
   font-weight: bold;
   cursor: pointer;
 }
+.nav-buttons {
+  background-color: #000;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.nav-buttons a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-buttons a:hover {
+  text-decoration: underline;
+}
+
+.page-title {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.form-container {
+  max-width: 600px;
+  background-color: white;
+  margin: auto;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-container label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.btn-submit {
+  margin-top: 30px;
+  background-color: #000;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #333;
+}
