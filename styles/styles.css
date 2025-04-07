@@ -1,13 +1,22 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Section */
 header {
-  background: url('../images/background.png') center/cover no-repeat;
+  background: url('images/hero.jpg') center/cover no-repeat;
+  background-size: cover;
   height: 100vh;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,16 +25,34 @@ header {
   padding: 20px;
 }
 
+.logo-container {
+  max-width: 70%;   /* Adjust the logo container's max width */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;  /* Space between logo and text */
+}
+
+header img {
+  max-width: 100%;   /* Ensure the logo scales responsively */
+  height: auto;      /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hero Text Styling */
 header h1 {
   font-size: 3em;
+  color: white;
   margin-bottom: 0.2em;
 }
 
 header p {
   font-size: 1.5em;
+  color: white;
   margin-bottom: 1em;
 }
 
+/* Button Styling */
 .btn {
   background-color: #000;
   color: #fff;
@@ -40,6 +67,7 @@ header p {
   background-color: #444;
 }
 
+/* Navigation Buttons */
 .nav-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -49,11 +77,21 @@ header p {
   padding: 0 20px;
 }
 
-section {
-  padding: 60px 20px;
-  text-align: center;
+.nav-buttons .btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
+.nav-buttons .btn:hover {
+  background-color: #444;
+}
+
+/* Services Section */
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -69,10 +107,19 @@ section {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.testimonials {
-  background: #f0f0f0;
+section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
+/* Testimonials */
+.testimonials {
+  background: #f0f0f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Footer */
 footer {
   background-color: #222;
   color: white;
@@ -138,37 +185,28 @@ footer a:hover {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  header {
-    height: auto;
-    padding: 80px 20px;
-    text-align: center;
+  .logo-container {
+    max-width: 50%;  /* Adjust logo size on smaller screens */
   }
 
-  header h1 {
-    font-size: 2em;
-  }
-
-  header p {
-    font-size: 1.2em;
-  }
-
-  .nav-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-buttons .btn {
-    width: 90%;
-    text-align: center;
+  .hero-fade {
+    font-size: 1.5em;
   }
 
   .services {
     flex-direction: column;
     align-items: center;
   }
+}
 
-  .service-item {
-    width: 90%;
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .logo-container {
+    max-width: 40%;  /* Further reduce size on mobile */
+  }
+
+  .hero-fade {
+    font-size: 1.3em;
   }
 
   footer {
