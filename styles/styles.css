@@ -1,10 +1,3 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Body Styling */
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -12,9 +5,9 @@ body {
   color: #333;
 }
 
-/* Header Section */
+/* Header section */
 header {
-  background: url('..images/background.jpg') center/cover no-repeat;
+  background: url('../images/background.png') center/cover no-repeat; /* Updated background path */
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -25,15 +18,17 @@ header {
   padding: 20px;
 }
 
+/* Logo Container */
 .logo-container {
-  max-width: 70%;   /* Adjust the logo container's max width */
+  max-width: 30%;  /* Reduce the container size to 40% for better scaling */
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;  /* Space between logo and text */
+  margin-bottom: 20px;
 }
 
+/* Logo Image */
 header img {
-  max-width: 100%;   /* Ensure the logo scales responsively */
+  max-width: 100%;   /* Ensure the logo scales within the container */
   height: auto;      /* Maintain aspect ratio */
   display: block;
   margin: 0 auto;
